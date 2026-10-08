@@ -99,7 +99,7 @@ For scenes where people talk (sketches, lip-sync clips, interviews), the camera'
 Transitions you want in the footage must be planned before generating. A body wipe can't be added in the edit. First decide where each transition lives:
 
 1. **Inside one clip**: the camera move is the transition (a pull-out reveal, a push through a doorway).
-2. **Hidden cut**: clip A ends and clip B starts in the same filled, blurred or dark state (papers thrown at the lens, a sleeve sweeping past, a whip pan), so the cut disappears. Put the same carrier in both clips, match direction and speed, and describe the physics ("one matte sheet covers the whole frame"), not "seamless transition".
+2. **Hidden cut**: clip A ends and clip B starts in the same filled, blurred or dark state (papers thrown at the lens, a sleeve sweeping past, a whip pan), so the cut disappears. Put the same carrier in both clips, match direction and speed, and describe the physics ("one matte sheet covers the whole frame"), not "seamless transition". Two generations never meet in exactly the same state; when the carrier must fill the frame (water, steam, smoke), add its full-cover moment as a layer in the edit that both clips pass through.
 3. **Generated bridge**: give the model a first and last frame and prompt the motion between them. Best for transformations.
 4. **Motivated hard cut**: cut on action, exit and enter frame, smash cut. This is the montage default. Keep screen direction and change shot size by a clear step.
 5. **Edit-only** (fade, dissolve, J/L cut): do it in the editor; don't prompt it.
@@ -115,6 +115,8 @@ Use hidden cuts and bridges as accents (1–3 in a 30–40 s piece). Details and
 - **Faces smear in wide shots.** Don't let a wide carry an expression.
 - **Rack focus is unreliable.** The focus often doesn't shift, or faces drift while it tries. For a shift that must land, make two stills (near sharp, then far sharp) and cut between them; treat a prompted rack as a bonus take.
 - **Unusual angles work better image-first.** For inside a hole, inside the fridge or hoop-level, generate several stills, pick the best, then animate it.
+- **Static props morph and styles drift over a clip.** A prop that should stay put can sprout parts (a lens grew on a camera box seen from above, Wan 3.0), and stylised characters drift toward photoreal over 5 s. Use the early seconds, start a follow-on clip from an early frame, and patch a static prop back from the still in the edit.
+- **Water or rain on the lens reads as weather.** "Water runs down the lens" gave a rainy scene. For a liquid wipe, let the clip deliver the splash and add the covering sheet of water in the edit.
 
 ## Check every prompt
 
