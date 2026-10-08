@@ -1,0 +1,14 @@
+{
+  "name": "joost",
+  "description": "Claude Code skills by Joost Hietbrink for directing AI video.",
+  "owner": {
+    "name": "Joost Hietbrink"
+  },
+  "plugins": [
+    {
+      "name": "ai-camera-shots",
+      "source": "./",
+      "description": "Pick and phrase camera shots, moves and in-camera transitions for AI image and video generation."
+    }
+  ]
+}

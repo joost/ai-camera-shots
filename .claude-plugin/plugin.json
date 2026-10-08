@@ -1,0 +1,10 @@
+{
+  "name": "ai-camera-shots",
+  "version": "1.0.0",
+  "description": "Pick and phrase camera shots, moves and in-camera transitions for AI image and video generation, so generations look directed instead of generic.",
+  "author": { "name": "Joost Hietbrink" },
+  "homepage": "https://github.com/joost/ai-camera-shots",
+  "repository": "https://github.com/joost/ai-camera-shots",
+  "license": "MIT",
+  "keywords": ["ai-video", "camera", "shot-list", "prompting", "transitions", "storyboard"]
+}
