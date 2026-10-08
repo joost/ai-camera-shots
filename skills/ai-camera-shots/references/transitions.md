@@ -39,7 +39,7 @@ Writing "then it cuts to" in one prompt usually produces a soft morph instead of
 **What carries the cut:**
 - **Object wipe**: something is thrown at or passes across the lens until it fills the frame (papers, a hand, a glass, confetti, a passing person or train).
 - **Body wipe**: the subject moves into or past the lens (stands up toward the camera, turns, walks in close).
-- **Whip pan**: a fast pan into motion blur; B starts in blur moving the same direction at the same speed.
+- **Whip pan**: a fast pan into motion blur; B starts in blur moving the same direction at the same speed. Models under-deliver the speed ("whips fast to the left" came back as a slow head turn and a moderate pan, Wan 3.0): generate it, then speed the pan up 3–4× in the edit and add horizontal motion blur that grows toward the cut.
 - **Lens block or dip to dark**: into a dark coat, a doorway, a tunnel, a hand over the lens; B starts dark and opens up.
 - **Portal**: the camera pushes into a hole, a keyhole, a glass or a mouth; B starts inside or emerges from it.
 - **Screen**: a phone or TV screen grows until it fills the frame and becomes the new scene. Shoot it flat-on, filling about 80% of the frame.
@@ -57,6 +57,9 @@ Writing "then it cuts to" in one prompt usually produces a soft morph instead of
 - **Describe the physics, not the effect.** "Seamless transition" tends to produce a visible effect. Write "the dark wool sleeve sweeps across the lens and fills the whole frame".
 - **Make the carrier matte and soft.** Models over-sharpen and over-light foreground objects. Say `matte, unlit, out of focus`.
 - **Generate longer than you need** so the clip doesn't end before full coverage, then trim.
+- **Something passing over or through the camera** (a train, a car, a wave): anchor its path and spell out each stage. "Its wheels rolling on the two rails … thunders right over the camera: the frame goes dark under the passing locomotive, then thick white steam engulfs the lens" worked in one take; without the rails and the stages, the train drifted off the track and the clip jumped to another part of it (Wan 3.0).
+
+**Judge joins with the real clips.** When part of a join lives in the edit (a match-cut zoom, a dissolve, a water or steam layer), the raw clips can't show it. Render a short preview of the two shots around each join before the full cut, and compare the last frame of A with the first frame of B side by side: they should look almost the same.
 
 **Image-first workflow:** the still for shot B should already show the carrier, with the new scene partly visible behind it. Example: the new location with out-of-focus papers falling across part of the frame. B's video prompt then clears the carrier: "the sheets keep falling past the lens and clear within the first second".
 
