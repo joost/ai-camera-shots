@@ -115,8 +115,8 @@ Use hidden cuts and bridges as accents (1–3 in a 30–40 s piece). Details and
 - **Faces smear in wide shots.** Don't let a wide carry an expression.
 - **Rack focus is unreliable.** The focus often doesn't shift, or faces drift while it tries. For a shift that must land, make two stills (near sharp, then far sharp) and cut between them; treat a prompted rack as a bonus take.
 - **Unusual angles work better image-first.** For inside a hole, inside the fridge or hoop-level, generate several stills, pick the best, then animate it.
-- **Static props morph and styles drift over a clip.** A prop that should stay put can sprout parts (a lens grew on a camera box seen from above, Wan 3.0), and stylised characters drift toward photoreal over 5 s. Use the early seconds, start a follow-on clip from an early frame, and patch a static prop back from the still in the edit.
-- **Water or rain on the lens reads as weather.** "Water runs down the lens" gave a rainy scene. For a liquid wipe, let the clip deliver the splash and add the covering sheet of water in the edit. Wet characters under a grey sky also read as rain: when the water should come from a gag, state the weather plainly as dry ("a bright, hot, dry morning, the platform dry and dusty"), so the dripping people are the only wet things.
+- **Static props morph and styles drift over a clip.** An object that should stay put can grow or lose parts, and stylised characters drift toward photoreal within a few seconds. Use the early seconds, start a follow-on clip from an early frame rather than the last, and patch a static prop back from the still in the edit.
+- **Water on the lens reads as weather.** Asking for water running down the lens tends to produce rain. For a liquid wipe, let the clip deliver the splash and add the covering sheet of water in the edit. Wet characters under a grey sky also read as rain: when the water comes from something in the story, state dry weather plainly ("a bright, dry, sunny day"), so the wet people are the only wet things.
 
 ## Check every prompt
 

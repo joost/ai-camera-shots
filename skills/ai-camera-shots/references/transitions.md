@@ -39,7 +39,7 @@ Writing "then it cuts to" in one prompt usually produces a soft morph instead of
 **What carries the cut:**
 - **Object wipe**: something is thrown at or passes across the lens until it fills the frame (papers, a hand, a glass, confetti, a passing person or train).
 - **Body wipe**: the subject moves into or past the lens (stands up toward the camera, turns, walks in close).
-- **Whip pan**: a fast pan into motion blur; B starts in blur moving the same direction at the same speed. Models under-deliver the speed ("whips fast to the left" came back as a slow head turn and a moderate pan, Wan 3.0): generate it, then speed the pan up 3–4× in the edit and add horizontal motion blur that grows toward the cut.
+- **Whip pan**: a fast pan into motion blur; B starts in blur moving the same direction at the same speed. Models often under-deliver the speed and return a slow turn or a moderate pan: generate it, then speed the pan up 3–4× in the edit and add horizontal motion blur that grows toward the cut.
 - **Lens block or dip to dark**: into a dark coat, a doorway, a tunnel, a hand over the lens; B starts dark and opens up.
 - **Portal**: the camera pushes into a hole, a keyhole, a glass or a mouth; B starts inside or emerges from it.
 - **Screen**: a phone or TV screen grows until it fills the frame and becomes the new scene. Shoot it flat-on, filling about 80% of the frame.
@@ -57,7 +57,7 @@ Writing "then it cuts to" in one prompt usually produces a soft morph instead of
 - **Describe the physics, not the effect.** "Seamless transition" tends to produce a visible effect. Write "the dark wool sleeve sweeps across the lens and fills the whole frame".
 - **Make the carrier matte and soft.** Models over-sharpen and over-light foreground objects. Say `matte, unlit, out of focus`.
 - **Generate longer than you need** so the clip doesn't end before full coverage, then trim.
-- **Something passing over or through the camera** (a train, a car, a wave): anchor its path and spell out each stage. "Its wheels rolling on the two rails … thunders right over the camera: the frame goes dark under the passing locomotive, then thick white steam engulfs the lens" worked in one take; without the rails and the stages, the train drifted off the track and the clip jumped to another part of it (Wan 3.0).
+- **Something passing over or through the camera** (a vehicle, an animal, a wave): anchor its path to something physical ("its wheels rolling on the rails", "its tyres on the road") and spell out each stage of the pass: approaching, the frame going dark as it passes overhead, and what fills the lens after it. Without that, the object tends to drift off its path or the clip jumps to another part of it.
 
 **Judge joins with the real clips.** When part of a join lives in the edit (a match-cut zoom, a dissolve, a water or steam layer), the raw clips can't show it. Render a short preview of the two shots around each join before the full cut, and compare the last frame of A with the first frame of B side by side: they should look almost the same.
 
@@ -74,8 +74,8 @@ ffmpeg -i edit.mp4 -vf "select='gt(scene,0.3)',showinfo" -f null - 2>&1 | grep -
 
 - **First and last frame:** give the model still A and still B, and it invents the motion between them. Prompt the connecting motion, not just "transition": `continuous clockwise spin maintained throughout`, `the blue drains downward as pink rises from the bottom, camera static`. This is ideal for transformations and product reveals.
 - **Match cut by shape** (a visible rhyme meant to be noticed): `Starting on [element in A], match cut to [same element in B], [shared shape, colour or motion] maintained throughout.` Example: a spinning coin becomes a chrome wheel rim.
-- **Match on the smallest shared shape, at the same size and place.** A lens ring cut to a hose nozzle's rim felt like a jump; pushing into the eye's pupil and cutting to the nozzle's dark opening (dark circle to dark circle, brown iris to brass rim, both centred and equally wide) read as one movement. Generate the push into the small shape rather than zooming a 720p clip 6×, and let two frames dissolve at the cut.
-- **Push into an object to enter its point of view.** A push-in that ends inside a camera's lens is a motivated cut to the view from inside that camera (going dark in the glass, the next shot opening from dark).
+- **Match on the smallest shared shape, at the same size and place.** Two big similar outlines (a ring, a rim) still read as a jump. Push into the small core of the shape (a pupil, a keyhole, the dark opening of a pipe) and cut to the matching core in B, centred and equally wide, ideally with similar colours around it; then ease out. Generate the push into the small shape rather than zooming a low-resolution clip far in the edit, and let two frames dissolve at the cut.
+- **Push into an object to enter its point of view.** A push that ends inside an object (a lens, a keyhole, a letterbox) is a motivated cut to the view from inside it: let A go dark inside the object and open B from dark.
 - **Last-frame handoff or extension:** use the last frame of A as the first frame of B (or the tool's extend feature) for one continuous camera move across locations.
 - **Tool support differs and changes fast.** One survey (prompt-architects.com, Aug 2026) listed: Veo 3.1 with first and last frame plus extend; Seedance 2.5 with last-frame export and a mode that generates between two videos; LTX-2.5 accepting named edits ("hard cut", "match cut") in the prompt; Kling 3.0 with multi-shot syntax but no transition vocabulary. Support also differs by provider: Wan 3.0 via OpenRouter rejected a last frame in Oct 2026 ("does not support last_frame"). Check the current docs of the tool *and* the provider you use, and have a fallback (cut on action, or a cut point where the states match).
 - Generate 3–5 variations of a bridge. When it fails, add constraints ("continuous motion, consistent lighting temperature") rather than removing them.
@@ -100,7 +100,7 @@ A visible cut where motion carries the eye across it. This is the default for mo
 
 ## 5. Edit-only
 
-Fade in or out, dissolve, iris, graphic wipe, defocus, J/L cut (audio leads or trails the picture), sound bridge. Add these in the editor; don't prompt them. In a HyperFrames project they belong to `hyperframes-animation` (scene transitions). Dissolves signal time passing or a change of place; hard cuts signal immediacy.
+Fade in or out, dissolve, iris, graphic wipe, defocus, J/L cut (audio leads or trails the picture), sound bridge. Add these in the editor; don't prompt them. Dissolves signal time passing or a change of place; hard cuts signal immediacy.
 
 ## How many
 
