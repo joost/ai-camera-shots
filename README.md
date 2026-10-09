@@ -2,7 +2,9 @@
 
 **AI video without direction looks like 1895.** Left alone, image and video models fall back to one shot: eye level, medium distance, centred, camera still. This [Claude Code](https://claude.com/claude-code) skill gives Claude a director's vocabulary, so the prompts it writes say where the camera is, what the angle should do, how the camera moves and how one shot hands over to the next.
 
-<!-- VIDEO: the spec ad (Lumière brothers), every shot planned with this skill. Coming soon. -->
+https://github.com/user-attachments/assets/82d4b215-b32f-44dd-81ba-3db19b292e28
+
+*The inventors of cinema on AI video (40 s, sound on). Every shot was planned with this skill: low and high angles, overhead, a push into the lens, a view from inside the camera, a match cut, a whip pan, and water and steam that hide the cuts.*
 
 ## What it covers
 
