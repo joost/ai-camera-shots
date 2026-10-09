@@ -4,7 +4,7 @@
 
 https://github.com/user-attachments/assets/c816d11b-9eb6-440a-abcc-28db716bdfd9
 
-*The inventors of cinema on AI video (40 s, sound on). Every shot was planned with this skill: low and high angles, overhead, a push into the lens, a view from inside the camera, a match cut, a whip pan, and water and steam that hide the cuts.*
+*The inventors of cinema on AI video (40 s). GitHub starts it muted: unmute 🔊 for the dialogue, or [watch it with sound on YouTube](https://www.youtube.com/watch?v=Uef7nGoyQ-4). Every shot was planned with this skill: low and high angles, overhead, a push into the lens, a view from inside the camera, a match cut, a whip pan, and water and steam that hide the cuts.*
 
 ## What it covers
 
